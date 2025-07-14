@@ -6,10 +6,10 @@ from db import get_all_tasks, mark_done
 def open_task_list():
     window = tk.Toplevel()
     window.title("Task List")
-    window.geometry("400x400")
-    window.configure(bg="white")
+    window.geometry("500x400")
+    window.configure(bg="white",fg="black")
 
-    heading = tk.Label(window, text="All Tasks", font=("Arial", 14, "bold"), bg="white")
+    heading = tk.Label(window, text="All Tasks", font=("Arial", 15, "bold"), bg="white")
     heading.pack(pady=10)
 
     tasks = get_all_tasks()
